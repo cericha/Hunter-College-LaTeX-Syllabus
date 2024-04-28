@@ -1,0 +1,65 @@
+% Packages and document settings
+\documentclass[11pt]{article} % Document type
+\usepackage[a4paper,margin=1in]{geometry} % Page size, margins
+\usepackage{fancyhdr} % Customize headers
+\usepackage{enumitem} % Customize lists
+\usepackage{booktabs} % Customize tables
+\usepackage{hyperref} % Hyperlink support
+\usepackage{url}      % URL formatting
+\usepackage{xcolor}   % Color URLs
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,      
+    urlcolor=blue,
+    citecolor=blue,
+}
+
+% Load configuration values, such as course title, instructor name, etc..
+\input{config}
+
+\setlength{\headheight}{14pt} % Header setting
+
+% Set title, author, and date information
+\title{\coursenumber\\\coursetitle}
+\author{}
+\date{\semester}
+
+% Start syllabus Content
+\begin{document}
+
+% Header information
+\pagestyle{fancy} 
+\fancyhead{}
+\lhead{\coursenumber} % Left header
+\rhead{\semester} % Right header
+
+% Display title
+\maketitle
+
+% Syllabus sections
+\thispagestyle{fancy}
+
+\section*{Instructor and Course Details}
+\input{sections/course_details.tex}
+\section*{Course Description}
+\input{sections/course_description}
+\section*{Prerequisites}
+\input{sections/prerequisites}
+\section*{Textbook}
+\input{sections/textbooks} % Specify if any or all textbooks are optionl
+\section*{Grading}
+\input{sections/grading_statement}
+\section*{Goals}
+\input{sections/required_statements/learning_outcomes}
+\section*{Attendance}
+\input{sections/attendance}
+\section*{Academic Integrity}
+\input{sections/required_statements/academic_integrity}
+\section*{ADA Statement}
+\input{sections/recommended_statements/adastatement}
+\section*{Hunter College Policy on Sexual Misconduct}
+\input{sections/required_statements/policy_sexual_misconduct}
+\section*{Syllabus Change Policy}
+\input{sections/syllabus_change_policy}
+
+\end{document}
