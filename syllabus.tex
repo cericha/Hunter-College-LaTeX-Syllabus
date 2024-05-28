@@ -7,6 +7,9 @@
 \usepackage{hyperref} % Hyperlink support
 \usepackage{url}      % URL formatting
 \usepackage{xcolor}   % Color URLs
+\usepackage{multirow}
+\usepackage{array}
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
 \hypersetup{
     colorlinks=true,
     linkcolor=blue,      
@@ -49,10 +52,12 @@
 \input{sections/textbooks} % Specify if any or all textbooks are optionl
 \section*{Grading}
 \input{sections/grading_statement}
+\section*{Late Policy}
+\input{sections/late_policy}
 \section*{Goals}
 \input{sections/required_statements/learning_outcomes}
-\section*{Attendance}
-\input{sections/attendance}
+% \section*{Attendance}
+% \input{sections/attendance}
 \section*{Academic Integrity}
 \input{sections/required_statements/academic_integrity}
 \section*{ADA Statement}
