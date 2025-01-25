@@ -22,7 +22,7 @@ Please refer to the most up to date information on CUNY, Hunter College, and dep
   - `adastatement.tex` – Recommended ADA compliance statement.
   - `policy_sexual_misconduct.tex` – Required policy on sexual misconduct.
   - `syllabus_change_policy.tex` – Policy on changes to the syllabus.
-
+  - `bulling.tex` - Required Computer Science Department Policy on cyberbullying.
 ## Usage
 
 To use this template:
